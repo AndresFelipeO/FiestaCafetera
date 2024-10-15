@@ -1,0 +1,437 @@
+fileFormatVersion: 2
+guid: 856c96442177cb44c80e4c5636b80946
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pepito 1.3 spritemap_5
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1684
+        width: 196
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110f649fee5c4de4589680d091a65a29
+      internalID: 311685875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepito 1.3 spritemap_6
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1697
+        width: 228
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bb7d5326888eb408a15ec8673aac25
+      internalID: 135264156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepito 1.3 spritemap_12
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1442
+        width: 234
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792154bd2036b3f4591b3b854b752666
+      internalID: -1486575436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepito 1.3 spritemap_13
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1455
+        width: 248
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54ba33e487d68947ac21801d0c0772a
+      internalID: 1892215406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepito 1.3 spritemap_17
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1188
+        width: 205
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1661daafe677774b854f590431b5a6d
+      internalID: 1200262191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepito 1.3 spritemap_18
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 1181
+        width: 196
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86674eb42f9f7e84ab652464b48356fe
+      internalID: -879864221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepito 1.3 spritemap_19
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1183
+        width: 183
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd1fb2aaf2d68144a3ebaaa41941933
+      internalID: -1304646033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepito 1.3 spritemap_20
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 1171
+        width: 221
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2cd4ec8190f7cc4faa2f9570f248303
+      internalID: 1946350213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepito 1.3 spritemap_22
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 1175
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65c9ee3877e8b64f88fcf5c24149bf9
+      internalID: -781738051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepito 1.3 spritemap_28
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 884
+        width: 222
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a495893706f65154ca3c44709778688e
+      internalID: -943677465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepito 1.3 spritemap_29
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 890
+        width: 233
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5714399cc483a6c4f90364f846ceedda
+      internalID: -1563589334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepito 1.3 spritemap_30
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 878
+        width: 235
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19243cab6b42d95468a9dfd8f3fdfd37
+      internalID: 355320042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pepito 1.3 spritemap_35
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 613
+        width: 243
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61a696b9ddc95e4c9987dabd858374f
+      internalID: -1416562469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      pepito 1.3 spritemap_0: -563764115
+      pepito 1.3 spritemap_1: -435578689
+      pepito 1.3 spritemap_10: 1322647751
+      pepito 1.3 spritemap_11: -925933687
+      pepito 1.3 spritemap_12: -1486575436
+      pepito 1.3 spritemap_13: 1892215406
+      pepito 1.3 spritemap_14: -279070252
+      pepito 1.3 spritemap_15: -266253330
+      pepito 1.3 spritemap_16: 893697634
+      pepito 1.3 spritemap_17: 1200262191
+      pepito 1.3 spritemap_18: -879864221
+      pepito 1.3 spritemap_19: -1304646033
+      pepito 1.3 spritemap_2: -1982444778
+      pepito 1.3 spritemap_20: 1946350213
+      pepito 1.3 spritemap_21: 425294770
+      pepito 1.3 spritemap_22: -781738051
+      pepito 1.3 spritemap_23: -818621317
+      pepito 1.3 spritemap_24: -1602972621
+      pepito 1.3 spritemap_25: -918955650
+      pepito 1.3 spritemap_26: -296612386
+      pepito 1.3 spritemap_27: 330174929
+      pepito 1.3 spritemap_28: -943677465
+      pepito 1.3 spritemap_29: -1563589334
+      pepito 1.3 spritemap_3: 439722024
+      pepito 1.3 spritemap_30: 355320042
+      pepito 1.3 spritemap_31: 1841670289
+      pepito 1.3 spritemap_32: -1193506226
+      pepito 1.3 spritemap_33: 1922860961
+      pepito 1.3 spritemap_34: 614209966
+      pepito 1.3 spritemap_35: -1416562469
+      pepito 1.3 spritemap_36: -943654628
+      pepito 1.3 spritemap_4: -828249290
+      pepito 1.3 spritemap_5: 311685875
+      pepito 1.3 spritemap_6: 135264156
+      pepito 1.3 spritemap_7: -1715829538
+      pepito 1.3 spritemap_8: -735028743
+      pepito 1.3 spritemap_9: 1081108574
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
