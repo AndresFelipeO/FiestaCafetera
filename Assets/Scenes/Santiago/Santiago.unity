@@ -222,6 +222,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5270760612494056199, guid: 9f97610741429a74299a733c325bd1bc, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 420374034872879676, guid: a23bb67e7e8e6c443bdd3a5e6d18b389, type: 3}
     - target: {fileID: 7742952322914386928, guid: 9f97610741429a74299a733c325bd1bc, type: 3}
       propertyPath: m_Name
       value: Pepito
