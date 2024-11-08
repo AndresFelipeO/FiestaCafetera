@@ -11,12 +11,17 @@ public class PepitoMovment : MonoBehaviour
     private float Horizontal;
     private float LastShoot;
 
+    public BarraDeVida barraDeVida;
+
+    private int Health = 3;
+
     private bool Grounded;
 
     void Start()
     {
         Rigidbody2D = GetComponent<Rigidbody2D>();
         Animator = GetComponent<Animator>();
+        barraDeVida.InicializarBarraDeVida(Health);
     }
 
     void Update()
@@ -92,6 +97,22 @@ public class PepitoMovment : MonoBehaviour
         GameObject bulletInstance = Instantiate(bullet, transform.position + direction * 0.6f, Quaternion.identity);
         bulletInstance.GetComponent<BulletScript>().SetDirection(direction);
 
+    }
+    
+private void OnCollisionEnter2D(Collision2D collision)
+{
+    Debug.Log("Pepito colisionó con " + collision.gameObject.name); 
+    
+    // Prueba para llamar al método Hit() siempre que Pepito colisione con cualquier objeto
+    Debug.Log("Colisión detectada. Llamando a Hit().");
+    Hit();
+}
+
+    public void Hit(){
+        Health = Health - 1;
+        barraDeVida.CambiarVidaActual(Health);
+        if(Health == 0) Destroy(gameObject);
+        Debug.Log("La salud de Pepito es: " + Health);
     }
 
 }
