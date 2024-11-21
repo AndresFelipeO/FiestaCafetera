@@ -406,7 +406,7 @@ Transform:
   m_GameObject: {fileID: 1091652917}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.74, z: -10}
+  m_LocalPosition: {x: 0, y: 3.81, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -824,6 +824,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3893177106340478329, guid: 9f97610741429a74299a733c325bd1bc, type: 3}
+      propertyPath: barraDeVida
+      value: 
+      objectReference: {fileID: 1239448390}
     - target: {fileID: 5270760612494056199, guid: 9f97610741429a74299a733c325bd1bc, type: 3}
       propertyPath: bullet
       value: 

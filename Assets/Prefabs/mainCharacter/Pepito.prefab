@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5739485222360512286}
   - component: {fileID: 5270760612494056199}
   - component: {fileID: 717153797117976499}
+  - component: {fileID: 3893177106340478329}
   m_Layer: 0
   m_Name: Pepito
   m_TagString: Untagged
@@ -162,9 +163,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12f2bc38d992e5b489e8cd1a499350e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 0}
-  JumpForce: 250
-  Speed: 9
+  bullet: {fileID: 420374034872879676, guid: a23bb67e7e8e6c443bdd3a5e6d18b389, type: 3}
+  jumpForce: 300
+  speed: 5
 --- !u!95 &717153797117976499
 Animator:
   serializedVersion: 5
@@ -186,3 +187,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3893177106340478329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7742952322914386928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c32941b89d6bf440b11d10447f3a8d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  damageEnemy: 1
+  barraDeVida: {fileID: 5677295213176312123, guid: f5e71fd4e9992b54dbf86c3ed2ebb085, type: 3}

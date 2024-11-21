@@ -193,6 +193,7 @@ GameObject:
   - component: {fileID: 6705674509807172473}
   - component: {fileID: 5915203727126020221}
   - component: {fileID: 1611597897645987081}
+  - component: {fileID: 7182173960305119897}
   m_Layer: 0
   m_Name: petro
   m_TagString: Untagged
@@ -317,12 +318,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a917dd989b66e3f4bbc4fac1a2dbf94c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hearts: 0
   controllerShor: {fileID: 2936942087131379170}
   bulletPrefab: {fileID: 1260826046027913332, guid: 84667b67d3928364599bbdc00e410c72, type: 3}
   shotWaitTime: 0.8
   waitTimeAnimator: 0.5
   shootTimer: 0
+--- !u!114 &7182173960305119897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510610270428270077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d82e7bc86bd624d96ff21cfe8d81ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
+  damagePlayer: 1
 --- !u!1 &836184701286564809
 GameObject:
   m_ObjectHideFlags: 0

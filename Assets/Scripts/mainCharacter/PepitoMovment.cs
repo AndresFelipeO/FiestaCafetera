@@ -1,89 +1,87 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
+
 public class PepitoMovment : MonoBehaviour
 {
     public GameObject bullet;
-    public float JumpForce;
-    public float Speed;
-    private Rigidbody2D Rigidbody2D;
-    private Animator Animator;
-    private float Horizontal;
-    private float LastShoot;
+    public float jumpForce;
+    public float speed;
+    private Rigidbody2D _rigidbody2D;
+    private Animator _animator;
+    private float _horizontal;
+    private float _lastShoot;
 
-    public BarraDeVida barraDeVida;
-
-    private int Health = 3;
-
-    private bool Grounded;
+    private bool _grounded;
 
     void Start()
     {
-        Rigidbody2D = GetComponent<Rigidbody2D>();
-        Animator = GetComponent<Animator>();
-        barraDeVida.InicializarBarraDeVida(Health);
+        _rigidbody2D = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
+        
     }
 
     void Update()
     {
-        Horizontal = Input.GetAxisRaw("Horizontal");
+        _horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (Horizontal < 0.0f) 
+        if (_horizontal < 0.0f) 
             transform.localScale = new Vector3(-0.5f, 0.5f, 1.0f);
-        else if (Horizontal > 0.0f) 
+        else if (_horizontal > 0.0f) 
             transform.localScale = new Vector3(0.5f, 0.5f, 1.0f);
 
-        Animator.SetBool("Running", Horizontal != 0.0f);
-        Animator.SetBool("Jumping", !Grounded);
+        _animator.SetBool("Running", _horizontal != 0.0f);
+        _animator.SetBool("Jumping", !_grounded);
 
         // Verificar si está en el suelo
         if (Physics2D.Raycast(transform.position, Vector3.down, 0.1f))
         {
-            Grounded = true;
-            Animator.SetBool("Jumping", false);
+            _grounded = true;
+            _animator.SetBool("Jumping", false);
         }
         else
         {
-            Grounded = false;
-            Animator.SetBool("Jumping", true);
+            _grounded = false;
+            _animator.SetBool("Jumping", true);
         }
 
         // Saltar
-        if (Input.GetKeyDown(KeyCode.W) && Grounded)
+        if (Input.GetKeyDown(KeyCode.W) && _grounded)
         {
             Jump();
         }
 
         // Disparar
-        if (Input.GetKey(KeyCode.Space) && Time.time > LastShoot + 0.25)
+        if (Input.GetKey(KeyCode.Space) && Time.time > _lastShoot + 0.25)
         {
 
             Shoot();
-            LastShoot = Time.time;
+            _lastShoot = Time.time;
         }
 
         // Detener la animación de disparo cuando se deja de presionar Space
         if (Input.GetKeyUp(KeyCode.Space))
         {
-            Animator.SetBool("Shooting", false);
+            _animator.SetBool("Shooting", false);
         }
     
     }
 
     private void Jump()
     {
-        Rigidbody2D.AddForce(Vector2.up * JumpForce);
+        _rigidbody2D.AddForce(Vector2.up * jumpForce);
     }
 
     private void FixedUpdate()
     {
-        Rigidbody2D.velocity = new Vector2(Horizontal * Speed, Rigidbody2D.velocity.y);
+        _rigidbody2D.velocity = new Vector2(_horizontal * speed, _rigidbody2D.velocity.y);
     }
 
     private void Shoot()
     {
         // Activar la animación de disparo
-        Animator.SetBool("Shooting", true);   
+        _animator.SetBool("Shooting", true);   
              
         Vector3 direction;
 
@@ -99,20 +97,5 @@ public class PepitoMovment : MonoBehaviour
 
     }
     
-private void OnCollisionEnter2D(Collision2D collision)
-{
-    Debug.Log("Pepito colisionó con " + collision.gameObject.name); 
-    
-    // Prueba para llamar al método Hit() siempre que Pepito colisione con cualquier objeto
-    Debug.Log("Colisión detectada. Llamando a Hit().");
-    Hit();
-}
-
-    public void Hit(){
-        Health = Health - 1;
-        barraDeVida.CambiarVidaActual(Health);
-        if(Health == 0) Destroy(gameObject);
-        Debug.Log("La salud de Pepito es: " + Health);
-    }
 
 }

@@ -6,22 +6,22 @@ using UnityEngine.UI;
 public class BarraDeVida : MonoBehaviour
 {
 
-    private Slider slider;
-    private Animator animator;
+    private Slider _slider;
+    private Animator _animator;
 
     void Start()
     {
-        slider = GetComponent<Slider>();
-        animator = GetComponent<Animator>();
+        this._slider = GetComponent<Slider>();
+        this._animator = GetComponent<Animator>();
     }
 
     public void CambiarVidaMaxima(float vidaMaxima){
-        slider.maxValue = vidaMaxima;
+        this._slider.maxValue = vidaMaxima;
     }
 
     public void CambiarVidaActual(float cantidadVida){
-        slider.value = cantidadVida;
-        animator.SetTrigger("Golpe");
+        this._slider.value = cantidadVida;
+        this._animator.SetTrigger("Golpe");
 
     }
 

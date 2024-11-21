@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PetroScript : MonoBehaviour
 {
-
-    public int hearts;
     private Animator animator;
     private float chronometer = 0f;
     public Transform controllerShor;
