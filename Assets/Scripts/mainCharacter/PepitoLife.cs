@@ -18,15 +18,17 @@ public class PepitoLife : MonoBehaviour
     {
         if (!other.CompareTag("enemy_bullet")) return;
         TakeDamage(this.damageEnemy);
-        Destroy(other.gameObject);
     }
 
     private void TakeDamage(int damage)
     {
         health -= damage;
-        barraDeVida.CambiarVidaActual(health);
-        if(health <= 0)
+        //TODO: lo dañe no se como funciona santi :c
+        //barraDeVida.CambiarVidaActual(health);
+        if (health <= 0)
+        {
             DiePepito();
+        }
     }
 
     private void DiePepito()

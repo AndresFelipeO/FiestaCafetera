@@ -1,58 +1,61 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PetroScript : MonoBehaviour
+namespace Petro
 {
-    private Animator animator;
-    private float chronometer = 0f;
-    public Transform controllerShor;
-    public GameObject bulletPrefab;
-    public float shotWaitTime = 1f; 
-    public float waitTimeAnimator=0.5f;
-    public float shootTimer = 0f;
+    public class PetroScript : MonoBehaviour
+    {
+        private static readonly int Attack = Animator.StringToHash("Attack");
+        private Animator _animator;
+        private float _chronometer = 0f;
+        public Transform controllerShor;
+        public GameObject bulletPrefab;
+        public float shotWaitTime = 1f;
+        public float shootTimer = 0f;
+        
+        
+        [Header("Attack Position")]
+        public float attackMinPosition = 0f;
+        public float attackMaxPosition = 2.5f;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        animator=GetComponent<Animator>();
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       Behavior();
-    }
-    private void Behavior()
-    {
-        chronometer+=1*Time.deltaTime;
-        
-        if (chronometer >= 5f)
+        // Start is called before the first frame update
+        void Start()
         {
-            shootTimer += Time.deltaTime;
-            animator.SetBool("Attack", true);
-            if (shootTimer >= shotWaitTime)
-            {
-                float randomValue = Random.Range(0f, 2.5f);
-                Shoot(randomValue);
-                shootTimer = 0f;  
-            }
+            _animator = GetComponent<Animator>();
         }
 
-        if (chronometer >= 15f)
+        // Update is called once per frame
+        void Update()
         {
-            animator.SetBool("Attack",false);
-            chronometer = 0f;
+            Behavior();
+        }
+        private void Behavior()
+        {
+            _chronometer+=1*Time.deltaTime;
+        
+            if (_chronometer >= 5f)
+            {
+                shootTimer += Time.deltaTime;
+                _animator.SetBool(Attack, true);
+                if (shootTimer >= shotWaitTime)
+                {
+                    float randomValue = Random.Range(this.attackMinPosition, this.attackMaxPosition);
+                    Shoot(randomValue);
+                    shootTimer = 0f;  
+                }
+            }
+
+            if (!(_chronometer >= 15f)) return;
+            _animator.SetBool(Attack,false);
+            _chronometer = 0f;
             shootTimer = 0f;
         }
-    }
-    private void Shoot(float positionMadraso)
-    {
-        Vector3 newPosition = controllerShor.position;
-        newPosition.y += positionMadraso;
-        Instantiate(bulletPrefab, newPosition, controllerShor.rotation);
+        private void Shoot(float shootingPosition)
+        {
+            Vector3 newPosition = controllerShor.position;
+            newPosition.y += shootingPosition;
+            Instantiate(bulletPrefab, newPosition, controllerShor.rotation);
         
-    }
+        }
     
+    }
 }

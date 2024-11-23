@@ -28,6 +28,6 @@ public class BulletScript : MonoBehaviour
 
     public void DestroyBullet()
     {
-        Destroy(gameObject, 0.5f);
+        Destroy(gameObject, 5f);
     }
 }

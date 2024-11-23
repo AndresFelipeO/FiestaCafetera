@@ -1,27 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PetroBullet : MonoBehaviour
+namespace Petro
 {
-    public float velocity;
-    public int damage;
+    public class PetroBullet : MonoBehaviour
+    {
+        public float velocity;
+        public int damage;
+        public float timeDestroyObjet=5f;
     
-    private float chronometer = 0f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        chronometer+=1*Time.deltaTime;
-        transform.Translate(Time.deltaTime*velocity*Vector2.right);
-        if (chronometer >= 2)
+        private float _chronometer = 0f;
+        // Start is called before the first frame update
+        void Start()
         {
-            Destroy(gameObject);
+        
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            _chronometer+=1*Time.deltaTime;
+            transform.Translate(Time.deltaTime*velocity*Vector2.right);
+            if (_chronometer >= timeDestroyObjet)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
