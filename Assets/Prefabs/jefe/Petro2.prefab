@@ -228,7 +228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controllerShor: {fileID: 8073559358615803675}
   bulletPrefab: {fileID: 3212514580186629972, guid: 1883240f7a81a724c809ffc08f7834e3, type: 3}
-  shotWaitTime: 1
+  shotWaitTime: 0.7
   shootTimer: 0
   attackMinPosition: 0
   attackMaxPosition: 0
@@ -958,8 +958,8 @@ Transform:
   m_GameObject: {fileID: 7903434380022078946}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.522, y: -1.966, z: -0.04103766}
-  m_LocalScale: {x: 1.443324, y: 1.751315, z: 1}
+  m_LocalPosition: {x: -0.735, y: 0.281, z: -0.04103766}
+  m_LocalScale: {x: 0.8877343, y: 1.0411409, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1427344366919333628}
@@ -1007,7 +1007,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 21300000, guid: 56bc8857a9cb1b84e801f9c2f3fa0f72, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b4aba19ae9ea2d947a924ef3f7dce555, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1031,10 +1031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RootBone: {fileID: 4469044539590399852}
-  m_BoneTransforms:
-  - {fileID: 4469044539590399852}
-  - {fileID: 6054788115082761325}
-  - {fileID: 773763995332455367}
+  m_BoneTransforms: []
   m_Bounds:
     m_Center: {x: -11.889851, y: -3.5936933, z: 0}
     m_Extent: {x: 0.62062883, y: 0.39474666, z: 0}

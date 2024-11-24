@@ -228,7 +228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 510610270428270077, guid: a3b7349d2dce0474d856e3b9d19692b0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1155154346386269963, guid: a3b7349d2dce0474d856e3b9d19692b0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -379,6 +379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Petro2
       objectReference: {fileID: 0}
+    - target: {fileID: 1986870514928394089, guid: 4791c69ac0e947941bdfdf1eb8c3e6db, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3712416195701380206, guid: 4791c69ac0e947941bdfdf1eb8c3e6db, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.928982
@@ -421,7 +425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4336390276373815851, guid: 4791c69ac0e947941bdfdf1eb8c3e6db, type: 3}
       propertyPath: shotWaitTime
-      value: 0.48
+      value: 0.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -439,6 +443,10 @@ PrefabInstance:
     - target: {fileID: 7742952322914386928, guid: 9f97610741429a74299a733c325bd1bc, type: 3}
       propertyPath: m_Name
       value: Pepito
+      objectReference: {fileID: 0}
+    - target: {fileID: 7742952322914386928, guid: 9f97610741429a74299a733c325bd1bc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8764562534243717171, guid: 9f97610741429a74299a733c325bd1bc, type: 3}
       propertyPath: m_LocalPosition.x
