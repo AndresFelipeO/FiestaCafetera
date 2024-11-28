@@ -7,13 +7,16 @@ public class PepitoMovment : MonoBehaviour
 {
     public GameObject bullet;
     public float jumpForce;
+    public float longitudRaycast = 0.1f;
+
+    public LayerMask capaSuelo;
     public float speed;
     private Rigidbody2D _rigidbody2D;
     private Animator _animator;
     private float _horizontal;
     private float _lastShoot;
 
-    private bool _grounded;
+    private bool enSuelo;
 
     void Start()
     {
@@ -32,26 +35,14 @@ public class PepitoMovment : MonoBehaviour
             transform.localScale = new Vector3(0.5f, 0.5f, 1.0f);
 
         _animator.SetBool("Running", _horizontal != 0.0f);
-        _animator.SetBool("Jumping", !_grounded);
 
-        // Verificar si está en el suelo
-        if (Physics2D.Raycast(transform.position, Vector3.down, 0.1f))
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, longitudRaycast, capaSuelo);
+        enSuelo = hit.collider != null;
+        if (enSuelo && Input.GetKeyDown(KeyCode.W))
         {
-            _grounded = true;
-            _animator.SetBool("Jumping", false);
+            _rigidbody2D.AddForce(new Vector2(0f,jumpForce), ForceMode2D.Impulse);
         }
-        else
-        {
-            _grounded = false;
-            _animator.SetBool("Jumping", true);
-        }
-
-        // Saltar
-        if (Input.GetKeyDown(KeyCode.W) && _grounded)
-        {
-            Jump();
-        }
-
+ 
         // Disparar
         if (Input.GetKey(KeyCode.Space) && Time.time > _lastShoot + 0.25)
         {
@@ -60,7 +51,7 @@ public class PepitoMovment : MonoBehaviour
             _lastShoot = Time.time;
         }
 
-        // Detener la animación de disparo cuando se deja de presionar Space
+
         if (Input.GetKeyUp(KeyCode.Space))
         {
             _animator.SetBool("Shooting", false);
@@ -68,10 +59,6 @@ public class PepitoMovment : MonoBehaviour
     
     }
 
-    private void Jump()
-    {
-        _rigidbody2D.AddForce(Vector2.up * jumpForce);
-    }
 
     private void FixedUpdate()
     {

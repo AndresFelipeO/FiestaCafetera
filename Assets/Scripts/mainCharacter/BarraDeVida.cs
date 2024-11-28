@@ -3,31 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BarraDeVida : MonoBehaviour
+public class BarraDeVida : MonoBehaviour   
+
 {
+    public List<Image> corazones; 
 
-    private Slider _slider;
-    private Animator _animator;
-
-    void Start()
+    public void InicializarBarraDeVida(int cantidadCorazones)
     {
-        this._slider = GetComponent<Slider>();
-        this._animator = GetComponent<Animator>();
+
+        for (int i = 0; i < cantidadCorazones; i++)
+        {
+            corazones[i].gameObject.SetActive(true);
+        }
     }
 
-    public void CambiarVidaMaxima(float vidaMaxima){
-        this._slider.maxValue = vidaMaxima;
+    public void CambiarVidaActual(int cantidadCorazonesRestantes)
+    {
+
+        for (int i = corazones.Count - 1; i >= cantidadCorazonesRestantes; i--)
+        {
+            corazones[i].gameObject.SetActive(false);
+        }
     }
-
-    public void CambiarVidaActual(float cantidadVida){
-        this._slider.value = cantidadVida;
-        this._animator.SetTrigger("Golpe");
-
-    }
-
-    public void InicializarBarraDeVida(float cantidadVida){
-        CambiarVidaMaxima(cantidadVida);
-        CambiarVidaActual(cantidadVida);
-    }
-
 }
