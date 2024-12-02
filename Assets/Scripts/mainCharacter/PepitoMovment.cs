@@ -16,7 +16,7 @@ public class PepitoMovment : MonoBehaviour
     private float _horizontal;
     private float _lastShoot;
 
-    private bool enSuelo;
+    public bool enSuelo;
 
     void Start()
     {
