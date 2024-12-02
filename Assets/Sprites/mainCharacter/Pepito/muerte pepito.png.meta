@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 299959c91dab37a4db9c95dcd6d87486
+guid: f9d19f70fbe95a94d9eafa70123b25d2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,43 +110,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HealthBar DARK_0
+      name: muerte pepito_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 89
-        width: 58
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 151
+        y: 2564
+        width: 445
+        height: 436
+      alignment: 9
+      pivot: {x: 0.49230963, y: 0.23312294}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5afad71f8059c0448ccfe894fb3543e
-      internalID: 1503589842
+      spriteID: 8198939a443f443429a3975c77f25a98
+      internalID: 2004128817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HealthBar DARK_1
+      name: muerte pepito_1
       rect:
         serializedVersion: 2
-        x: 8
-        y: 71
-        width: 20
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 815
+        y: 2129
+        width: 455
+        height: 633
+      alignment: 9
+      pivot: {x: 0.5, y: 0.20804946}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b8febf0b8101e04e8a52a62e46af3ae
-      internalID: 638272681
+      spriteID: aa1aa5cb1a5a2e54b959bfe78c00166d
+      internalID: 950583748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte pepito_2
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 1259
+        width: 445
+        height: 638
+      alignment: 9
+      pivot: {x: 0.5307628, y: 0.14596778}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccffb0cc158af1d4e95fa62cbc3abd48
+      internalID: -516502016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte pepito_3
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 2144
+        width: 431
+        height: 626
+      alignment: 9
+      pivot: {x: 0.47617957, y: 0.21025188}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935fb1b3404067044af0ee93f57ab36f
+      internalID: -1703886614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte pepito_4
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 1257
+        width: 424
+        height: 640
+      alignment: 9
+      pivot: {x: 0.54843026, y: 0.12568513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5953529df8d484eb4adbc3c4605284
+      internalID: -355800687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte pepito_5
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 15
+        width: 449
+        height: 640
+      alignment: 9
+      pivot: {x: 0.5304888, y: 0.1631161}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fef19dcae19dc8499ef4a50dbe89ef5
+      internalID: 370235225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte pepito_6
+      rect:
+        serializedVersion: 2
+        x: 1973
+        y: 131
+        width: 418
+        height: 630
+      alignment: 9
+      pivot: {x: 0.46725127, y: 0.16320103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321a71f6366dc51419db8d10c5947f07
+      internalID: 556004701
       vertices: []
       indices: 
       edges: []
@@ -162,17 +267,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      HealthBar DARK_0: 1503589842
-      HealthBar DARK_1: 638272681
-      HealthBar DARK_10: 272698628
-      HealthBar DARK_2: -1468415790
-      HealthBar DARK_3: -938185403
-      HealthBar DARK_4: 2016227117
-      HealthBar DARK_5: 618543211
-      HealthBar DARK_6: -520964403
-      HealthBar DARK_7: -369904983
-      HealthBar DARK_8: 860012318
-      HealthBar DARK_9: 506814207
+      muerte pepito_0: 2004128817
+      muerte pepito_1: 950583748
+      muerte pepito_2: -516502016
+      muerte pepito_3: -1703886614
+      muerte pepito_4: -355800687
+      muerte pepito_5: 370235225
+      muerte pepito_6: 556004701
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a7d01675153d524b85eaf1e063b8e9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  corazones:
+  corazonesAnimados:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
