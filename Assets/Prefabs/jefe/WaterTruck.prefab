@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 8059722657933411387}
   - component: {fileID: 2017253930885607119}
   - component: {fileID: 5447372157535738051}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WaterTruck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
