@@ -5,6 +5,8 @@ namespace Petro
 {
     public class FinalPetro : MonoBehaviour
     {
+        private Animator _animator;
+        private static readonly int Jump = Animator.StringToHash("Jump");
         public Transform player; 
         public float jumpDuration = 1f; 
         public float timeBetweenJumps = 3f; 
@@ -21,6 +23,7 @@ namespace Petro
         {
             _initialPosition = transform.position;
             _cooldownTimer = timeBetweenJumps;
+            _animator = GetComponent<Animator>();
         }
 
         void Update()
@@ -43,6 +46,7 @@ namespace Petro
         private void StartJump(Vector2 target)
         {
             _isJumping = true;
+            _animator.SetBool(Jump,true);
             _jumpTimer = 0f;
             _startPosition = transform.position;
             
@@ -55,6 +59,7 @@ namespace Petro
 
             if (_jumpTimer > 1f)
             {
+                _animator.SetBool(Jump,false);
                 transform.position = _targetPosition;
                 _isJumping = false;
                 if (_targetPosition == _initialPosition)
@@ -68,7 +73,7 @@ namespace Petro
             
             float verticalOffset = Mathf.Sin(_jumpTimer * Mathf.PI) * jumpHeight;
             
-            transform.position = new Vector2(horizontalPosition.x, horizontalPosition.y + verticalOffset+3);
+            transform.position = new Vector2(horizontalPosition.x, horizontalPosition.y + verticalOffset+1);
         }
     }
 }

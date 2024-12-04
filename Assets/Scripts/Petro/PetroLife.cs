@@ -6,6 +6,7 @@ namespace Petro
     {
         public int health=100;
         public int damagePlayer=10;
+        public GameObject nextPhase;
 
         private void OnTriggerEnter2D(Collider2D other)
         {
@@ -24,6 +25,8 @@ namespace Petro
         private void DiePetro()
         {
             Destroy(gameObject);
+            if(nextPhase != null)
+                nextPhase.SetActive(true);
         }
     }
 }
