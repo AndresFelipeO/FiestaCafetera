@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Petro
 {
     public class PetroLife : MonoBehaviour
     {
+        [SerializeField] private string sceneToLoad;
         public int health=100;
         public int damagePlayer=10;
         public GameObject nextPhase;
@@ -24,9 +26,17 @@ namespace Petro
 
         private void DiePetro()
         {
-            Destroy(gameObject);
-            if(nextPhase != null)
+            if (nextPhase != null)
+            {
                 nextPhase.SetActive(true);
+                Destroy(gameObject);
+            }
+            else
+                Invoke(nameof(TriggerGameOver), 2f);
+        }
+        private void TriggerGameOver()
+        {
+            SceneManager.LoadScene(sceneToLoad);
         }
     }
 }

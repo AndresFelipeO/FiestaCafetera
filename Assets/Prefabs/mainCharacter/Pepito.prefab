@@ -170,6 +170,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   speed: 5
+  enSuelo: 0
 --- !u!95 &717153797117976499
 Animator:
   serializedVersion: 5
@@ -203,6 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c32941b89d6bf440b11d10447f3a8d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: Scenes/levels/game_over
   health: 3
   damageEnemy: 1
   barraDeVida: {fileID: 5677295213176312123, guid: f5e71fd4e9992b54dbf86c3ed2ebb085, type: 3}

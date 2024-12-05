@@ -6,12 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/map/colombia.unity
+    guid: 375134353949e9e4884929230eda0f5a
   - enabled: 1
     path: Assets/Scenes/levels/popayan.unity
     guid: 00ae3512278dfd04c88f4446c34e11e0
   - enabled: 1
-    path: Assets/Scenes/map/colombia.unity
-    guid: 375134353949e9e4884929230eda0f5a
+    path: Assets/Scenes/levels/game_over.unity
+    guid: d011e9280dd05a547adc30729bafc50e
+  - enabled: 1
+    path: Assets/Scenes/levels/game_won.unity
+    guid: f389ac6e59992454eb7c32424ef27ad4
   m_configObjects: {}
