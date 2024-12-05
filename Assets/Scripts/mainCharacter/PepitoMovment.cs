@@ -18,12 +18,20 @@ public class PepitoMovment : MonoBehaviour
 
     public bool enSuelo;
 
+    private SoundManager _soundManager;
+
     void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-        
-    }
+        // Obtén la referencia al SoundManager
+        _soundManager = FindObjectOfType<SoundManager>();
+        if (_soundManager == null)
+        {
+            Debug.LogError("No se encontró el SoundManager en la escena.");
+        }
+            
+        }
 
     void Update()
     {
@@ -36,11 +44,16 @@ public class PepitoMovment : MonoBehaviour
 
         _animator.SetBool("Running", _horizontal != 0.0f);
 
+
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, longitudRaycast, capaSuelo);
         enSuelo = hit.collider != null;
         if (enSuelo && Input.GetKeyDown(KeyCode.W))
         {
             _rigidbody2D.AddForce(new Vector2(0f,jumpForce), ForceMode2D.Impulse);
+            if (_soundManager != null)
+            {
+                _soundManager.PlayJumpSound();
+            }
         }
  
         // Disparar
@@ -81,6 +94,10 @@ public class PepitoMovment : MonoBehaviour
         // Instanciar la bala
         GameObject bulletInstance = Instantiate(bullet, transform.position + direction * 0.6f, Quaternion.identity);
         bulletInstance.GetComponent<BulletScript>().SetDirection(direction);
+        if (_soundManager != null)
+        {
+            _soundManager.PlayShootSound();
+        }       
 
     }
     
