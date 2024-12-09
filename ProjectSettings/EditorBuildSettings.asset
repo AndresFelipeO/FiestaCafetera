@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/levels/Menu.unity
+    guid: b89f63961df001a4f96bb4df5f10cc82
+  - enabled: 1
     path: Assets/Scenes/map/colombia.unity
     guid: 375134353949e9e4884929230eda0f5a
   - enabled: 1

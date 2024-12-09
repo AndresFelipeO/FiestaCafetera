@@ -11,6 +11,7 @@ namespace Petro
         public GameObject bulletPrefab;
         public float shotWaitTime = 1f;
         public float shootTimer = 0f;
+        public bool noShots=false;
         
         
         [Header("Attack Position")]
@@ -32,7 +33,7 @@ namespace Petro
         {
             _chronometer+=1*Time.deltaTime;
         
-            if (_chronometer >= 5f)
+            if (_chronometer >= 5f && !noShots)
             {
                 shootTimer += Time.deltaTime;
                 _animator.SetBool(Attack, true);

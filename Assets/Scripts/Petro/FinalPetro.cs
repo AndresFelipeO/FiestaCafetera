@@ -18,6 +18,7 @@ namespace Petro
         private float _cooldownTimer = 0f; 
         private Vector2 _startPosition;
         private Vector2 _targetPosition; 
+        public bool noJump=false;
 
         void Start()
         {
@@ -36,7 +37,7 @@ namespace Petro
             {
                 _cooldownTimer -= Time.deltaTime;
 
-                if (_cooldownTimer <= 0f)
+                if (_cooldownTimer <= 0f && !noJump)
                 {
                     StartJump(player.position); 
                 }
