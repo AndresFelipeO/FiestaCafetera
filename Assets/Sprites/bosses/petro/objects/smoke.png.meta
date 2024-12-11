@@ -100,12 +100,12 @@ TextureImporter:
       name: humo_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 464.2
-        height: 430
+        x: 9
+        y: 7
+        width: 444
+        height: 412
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,12 +121,12 @@ TextureImporter:
       name: humo_1
       rect:
         serializedVersion: 2
-        x: 464
-        y: 0
-        width: 464.2
-        height: 430
+        x: 475
+        y: 9
+        width: 444
+        height: 410
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,12 +142,12 @@ TextureImporter:
       name: humo_2
       rect:
         serializedVersion: 2
-        x: 928
-        y: 0
-        width: 464.2
-        height: 430
+        x: 938
+        y: 9
+        width: 446
+        height: 409
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,13 +163,13 @@ TextureImporter:
       name: humo_3
       rect:
         serializedVersion: 2
-        x: 1392
-        y: 0
-        width: 464.2
-        height: 430
+        x: 1404
+        y: 10
+        width: 448
+        height: 408
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 2, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -184,12 +184,12 @@ TextureImporter:
       name: humo_4
       rect:
         serializedVersion: 2
-        x: 1856
-        y: 0
-        width: 464.2
-        height: 430
+        x: 1862
+        y: 8
+        width: 452
+        height: 411
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,12 +205,12 @@ TextureImporter:
       name: humo_5
       rect:
         serializedVersion: 2
-        x: 2320
-        y: 0
-        width: 464.2
-        height: 430
+        x: 2326
+        y: 8
+        width: 452
+        height: 411
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -226,12 +226,12 @@ TextureImporter:
       name: humo_6
       rect:
         serializedVersion: 2
-        x: 2784
-        y: 0
-        width: 464.2
-        height: 430
+        x: 2796
+        y: 8
+        width: 445
+        height: 410
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -247,12 +247,12 @@ TextureImporter:
       name: humo_7
       rect:
         serializedVersion: 2
-        x: 3248
-        y: 0
-        width: 464.2
-        height: 430
+        x: 3257
+        y: 7
+        width: 447
+        height: 411
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,12 +268,12 @@ TextureImporter:
       name: humo_8
       rect:
         serializedVersion: 2
-        x: 3712
-        y: 0
-        width: 464.2
-        height: 430
+        x: 3719
+        y: 8
+        width: 451
+        height: 410
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -289,12 +289,12 @@ TextureImporter:
       name: humo_9
       rect:
         serializedVersion: 2
-        x: 4176
-        y: 0
-        width: 464.2
-        height: 430
+        x: 4184
+        y: 6
+        width: 449
+        height: 417
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -302,6 +302,27 @@ TextureImporter:
       bones: []
       spriteID: 99c17d1fb0f64b44b8a301104debb3f4
       internalID: -275127539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_0
+      rect:
+        serializedVersion: 2
+        x: 1857
+        y: 425
+        width: 2
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c81be7a77b0d143af5220688bf1484
+      internalID: -1699838867
       vertices: []
       indices: 
       edges: []
@@ -327,6 +348,7 @@ TextureImporter:
       humo_7: 1658558123
       humo_8: 1599446147
       humo_9: -275127539
+      smoke_0: -1699838867
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

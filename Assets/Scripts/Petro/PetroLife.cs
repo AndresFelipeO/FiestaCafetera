@@ -11,10 +11,13 @@ namespace Petro
         public int damagePlayer=10;
         public GameObject nextPhase;
         private Animator _animator;
+        private SoundManagerPetro _soundManager;
+        private bool _isDead = false;
         
         void Start()
         {
             _animator = GetComponent<Animator>();
+            _soundManager = FindObjectOfType<SoundManagerPetro>();
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -26,6 +29,7 @@ namespace Petro
 
         private void TakeDamage(int damage)
         {
+            if (_isDead) return;
             health -= damage;
             if(health <= 0)
                 DiePetro();
@@ -33,14 +37,17 @@ namespace Petro
 
         private void DiePetro()
         {
+            if (_isDead) return; // Evitar múltiples llamadas
+            _isDead = true; // Marca como muerto
+            _soundManager.PlayDeathSound();
             _animator.SetTrigger(Death);
             if (nextPhase != null)
             {
-                Invoke(nameof(NextPhase), 3f);
+                Invoke(nameof(NextPhase), 4f);
             }
             else
             {
-                Invoke(nameof(TriggerGameOver), 2f);
+                Invoke(nameof(TriggerGameOver), 4f);
             }
         }
 

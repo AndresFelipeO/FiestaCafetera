@@ -115,7 +115,7 @@ public class PepitoLife : MonoBehaviour
             _soundManager.PlayDeathSound();
         }
 
-        Invoke(nameof(TriggerGameOver), 2f);
+        Invoke(nameof(TriggerGameOver), 5f);
     }
 
     private void TriggerGameOver()
